@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos SYSTEM "estructura.dtd">
+
+<centroEducativo>
+
+    <clase id=>
+
+        <alumno id="1">
+            <nombre>Rafael Tarazona</nombre>
+            <edad>37</edad>
+        </alumno>
+
+        <alumno id="2">
+            <nombre>Álvaro Baz</nombre>
+            <edad>18</edad>
+        </alumno>
+
+        <alumno id="3">
+            <nombre>Daniel Aldegunde</nombre>
+            <edad>18</edad>
+        </alumno>
+
+        <alumno id="4">
+            <nombre>Joaquin Rodriguez</nombre>
+            <edad>18</edad>
+        </alumno>
+
+        <alumno id="5">
+            <nombre>Enrique Pastor</nombre>
+            <edad>18</edad>
+        </alumno>
+    </clase>
+
+    <secretaria>
+    
+        <administrativo id="1">
+            <nombre>Laura Gómez</nombre>
+            <turno>Mañana</turno>
+        </administrativo>
+
+        <administrativo id="2">
+            <nombre>Carlos Ruiz</nombre>
+            <turno>Mañana</turno>
+        </administrativo>
+        hola
+
+        <administrativo id="3">
+            <nombre>Ana López</nombre>
+            <turno>Tarde</turno>
+        </administrativo>
+
+        <administrativo id="4">
+            <nombre>Mario Pérez</nombre>
+            <turno>Tarde</turno>
+        </administrativo>
+
+        <administrativo id="5">
+            <nombre>Lucía Torres</nombre>
+            <turno>Mañana</turno>
+        </administrativo>
+    </secretaria>
+
+    <direccion>
+        <miembro id="1">
+            <nombre>Antonio Pérez</nombre>
+            <cargo>Director</cargo>
+        </miembro>
+
+        <miembro id="2">
+            <nombre>María Sánchez</nombre>
+            <cargo>Jefa de estudios</cargo>
+        </miembro>
+
+        <miembro id="3">
+            <nombre>Juan López</nombre>
+            <cargo>Subdirector</cargo>
+        </miembro>
+
+        <miembro id="4">
+            <nombre>Ana Ruiz</nombre>
+            <cargo>Secretaria académica</cargo>
+        </miembro>
+
+        <miembro id="5">
+            <nombre>Carlos Martín</nombre>
+            <cargo>Coordinador</cargo>
+        </miembro>
+    </direccion>
+
+</centroEducativo>
