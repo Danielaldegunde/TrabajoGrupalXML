@@ -1,14 +1,24 @@
-<!ELEMENT centroEducativo (clase+)>
+<!ELEMENT centroEducativo (clase, secretaria, direccion)>
 
-<!ELEMENT clase (curso, tutor, alumno+)>
+<!ELEMENT clase (alumno+)>
 <!ATTLIST clase id CDATA #REQUIRED>
-
-<!ELEMENT curso (#PCDATA)>
-<!ELEMENT tutor (#PCDATA)>
 
 <!ELEMENT alumno (nombre, edad)>
 <!ATTLIST alumno id CDATA #REQUIRED>
 
+<!ELEMENT secretaria (administrativo+)>
+<!ATTLIST secretaria id CDATA #REQUIRED>
+
+<!ELEMENT administrativo (nombre, turno)>
+<!ATTLIST administrativo id CDATA #REQUIRED>
+
+<!ELEMENT direccion (miembro+)>
+<!ATTLIST direccion id CDATA #REQUIRED>
+
+<!ELEMENT miembro (nombre, cargo)>
+<!ATTLIST miembro id CDATA #REQUIRED>
+
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT edad (#PCDATA)>
-
+<!ELEMENT turno (#PCDATA)>
+<!ELEMENT cargo (#PCDATA)>

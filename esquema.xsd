@@ -4,24 +4,58 @@
     <xs:element name="centroEducativo">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="clase" maxOccurs="unbounded">
+
+                <xs:element name="clase">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="curso" type="xs:string"/>
-                            <xs:element name="tutor" type="xs:string"/>
                             <xs:element name="alumno" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string"/>
                                         <xs:element name="edad" type="xs:integer"/>
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="id" type="xs:integer" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
                     </xs:complexType>
                 </xs:element>
+
+                <xs:element name="secretaria">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="administrativo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="turno" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="miembro" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="cargo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
             </xs:sequence>
         </xs:complexType>
     </xs:element>
