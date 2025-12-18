@@ -1,0 +1,14 @@
+<!ELEMENT centroEducativo (clase+)>
+
+<!ELEMENT clase (curso, tutor, alumno+)>
+<!ATTLIST clase id CDATA #REQUIRED>
+
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT tutor (#PCDATA)>
+
+<!ELEMENT alumno (nombre, edad)>
+<!ATTLIST alumno id CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+
